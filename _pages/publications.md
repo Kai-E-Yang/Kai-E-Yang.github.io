@@ -7,7 +7,7 @@ author_profile: true
 
 <!-- {% if author.googlescholar %} -->
 <!-- {% endif %} -->
-You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u> and <u><a href="{{author.ads}}">my ADS library</a>.</u>.
+You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a></u> and <u><a href="{{author.ads}}">my ADS library</a></u>.
 
 {% include base_path %}
 
