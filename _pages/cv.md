@@ -18,7 +18,10 @@ Education
 
 Work experience
 ======
-* Mar 2019-Mar 2021: Post doctorate Research Assistant
+* Apr 2022-present: Post doctorate
+  * Institute for Astronomy, Research Corporation of the University of Hawaii
+
+* Mar 2019-Mar 2022: Post doctorate Research Assistant
   * Sydney Institute for Astronomy, School of Physics, The University of Sydney
 
 * Jul 2018-Feb 2019: Post doctorate
