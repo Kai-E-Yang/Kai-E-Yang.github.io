@@ -313,3 +313,9 @@ compress_html:
 
 # enable search
 search: true
+
+# change theme
+theme: minimal-mistakes-jekyll
+
+# background image
+background-image: background.jpg
