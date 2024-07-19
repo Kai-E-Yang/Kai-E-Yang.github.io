@@ -14,7 +14,7 @@ title                    : "Dr. Kai E. Yang"
 title_separator          : "-"
 name                     : &name "Kai E. Yang"
 description              : &description "personal description"
-url                      : https://kai-e-yang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://kai-e-yang.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/Kai-E-Yang/Kai-E-Yang.github.io/"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
