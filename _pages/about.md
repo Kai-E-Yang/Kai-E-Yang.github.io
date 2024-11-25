@@ -1,16 +1,25 @@
 ---
+layout: about
+title: about
 permalink: /
-title: "Who am I and What I did"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>555 your office number</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
+
+news: true # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
-I am a solar physics researcher. My research interests are,
-* The solar coronal heating puzzle, contrasted with measured inputs, e.g., the heating power expression based on observed quantities.
-* Magnetic topology and reconstruction of the solar corona, e.g., the magnetic helicity calculation, searching for a null point, separatrix, and separator, and computing the quasi-separatrix layer.
-* MHD instabilities that trigger eruptions, e.g., the kink instability related to the twist number before and after eruption.
-* Solar and stellar flares model and statistics.
-* Spectropolarimetric inversion and post-processing for solar lower atmospheric observations. Currently works on the DKIST VISP data.
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
