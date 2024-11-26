@@ -9,17 +9,30 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>219</p>
+    <p>34 Ohia Ku St.</p>
+    <p>Pukalani, HI 96768</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+### About Me
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a solar physics researcher with a broad interest in understanding the Sun's dynamic processes and their implications. My research spans several key areas:
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+- ###### Solar Coronal Heating Puzzle: Investigating the mechanisms behind coronal heating by analyzing heating power expressions derived from observed quantities and contrasting them with measured inputs.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- ###### Magnetic Topology and Reconstruction of the Solar Corona: Exploring the magnetic structure of the solar corona, including magnetic helicity calculations, identifying null points, separatrices, separators, and computing quasi-separatrix layers.
+
+- ###### MHD Instabilities and Eruptions: Examining magnetohydrodynamic (MHD) instabilities, such as the kink instability, to understand eruption triggers and the role of twist numbers pre- and post-eruption.
+
+- ###### Solar and Stellar Flares: Bridging the gap between models and observations to unravel the dynamics of solar and stellar flares.
+
+
+Recently, I have developed a strong interest in leveraging machine learning techniques for solar data analysis. My focus includes:
+
+- ###### Reconstructing the 3D solar photosphere from spectropolarimetric (SP) observations.
+
+- ###### Deriving the 3D coronal magnetic field from SP observations.
+

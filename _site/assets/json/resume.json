@@ -1,23 +1,23 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Kai (E.) Yang",
     "label": "Scientist",
     "image": "",
-    "email": "kaiyang@hawaii.edu",
+    "email": "yangkai@hawaii.edu",
     // "phone": "(912) 123-4567",
-    "url": "https://Kai-E-Yang.github.io/",
-    "summary": "A Chinese-born solar-physicist ...",
+    "url": "https://github.com/Kai-E-Yang/",
+    "summary": "A Chinese-northeast-born solar-physicist ... ",
     "location": {
-      "address": "34 Ohia Ku. St",
-      "postalCode": "96768",
+      "address": "34 Ohia Ku St.",
+      "postalCode": "HI 96768",
       "city": "Pukalani",
       "countryCode": "US",
-      "region": "Maui, HI"
+      "region": "Maui"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "KaiEYang",
+        "username": "AlbertEinstein",
         "url": "https://twitter.com/AlbertEinstein"
       }
     ]
@@ -29,8 +29,8 @@
       "url": "https://www.ifa.hawaii.edu/",
       "startDate": "2022-04-11",
       "endDate": "present",
-      "summary": "Machine learning technique on solar spectropolarimetric observations",
-      "highlights": ["SPIn4D Project"]
+      "summary": "Machine learning technique on spectropolarimetric inversion",
+      "highlights": ["SPIn4D"]
     },
     {
       "name": "Sydney Institute for Astronomy, School of Physics, The University of Sydney",
@@ -38,17 +38,29 @@
       "url": "https://sifa.sydney.edu.au/",
       "startDate": "2019-03-01",
       "endDate": "2021-11-30",
-      "summary": "Solar coronal magnetic field modelling",
-      "highlights": ["Magnetic Field Helicity"]
+      "summary": "Solar coronal magnetic field",
+      "highlights": ["NLFFF"]
     },
     {
-      "name": "chool of Astronomy and Space Science, Nanjing University",
+      "name": "School of Astronomy and Space Science, Nanjing University",
       "position": "Postdoctoral Researcher",
       "url": "https://astronomy.nju.edu.cn/",
       "startDate": "2018-07-01",
       "endDate": "2019-02-28",
-      "summary": "Solar coronal magnetic field modelling",
-      "highlights": ["Magnetic Field modelling"]
+      "summary": "Solar coronal magnetic field",
+      "highlights": ["Coronal Heating"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "People's Climate March",
+      "location": "Zurich, Switzerland",
+      "position": "Lead Organizer",
+      "url": "https://example.com",
+      "startDate": "2014-04-01",
+      "endDate": "2015-07-01",
+      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     }
   ],
   "education": [
@@ -61,7 +73,7 @@
       "startDate": "2013-09-01",
       "endDate": "2018-06-30",
       "score": "10",
-      "courses": ["Astronomy"]
+      "courses": ["Magnetic Field Topology Associated with Solar Eruptive Events and Coronal Heating"]
     },
     {
       "institution": "Jilin University, Changchun, China",
@@ -72,30 +84,83 @@
       "startDate": "2009-09-01",
       "endDate": "2013-06-30",
       "score": "10",
-      "courses": ["Physics"]
+      "courses": ["Magnetic Field Topology Associated with Solar Eruptive Events and Coronal Heating"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Nobel Prize in Physics",
+      "date": "1921-11-01",
+      "awarder": "Royal Swedish Academy of Sciences",
+      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Machine Learning",
+      "date": "2018-01-01",
+      "issuer": "Stanford University",
+      "url": "https://example.com",
+      "icon": "fa-solid fa-location-dot"
     },
+    {
+      "name": "Quantum Computing",
+      "date": "2018-01-01",
+      "issuer": "Stanford University",
+      "url": "https://example.com",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Quantum Information",
+      "date": "2018-01-01",
+      "issuer": "Stanford University",
+      "url": "https://example.com",
+      "icon": "fa-solid fa-envelope"
+    },
+    {
+      "name": "Quantum Cryptography",
+      "date": "2018-01-01",
+      "issuer": "Stanford University",
+      "url": "https://example.com",
+      "icon": "fa-solid fa-hashtag"
+    },
+    {
+      "name": "Quantum Communication",
+      "date": "2018-01-01",
+      "issuer": "Stanford University",
+      "url": "https://example.com",
+      "icon": "fa-solid fa-calendar"
+    },
+    {
+      "name": "Quantum Teleportation",
+      "date": "2018-01-01",
+      "issuer": "Stanford University",
+      "url": "https://example.com",
+      "icon": "fa-solid fa-clipboard-check"
+    }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Spectropolarimetric Inversion in Four Dimensions with Deep Learning (SPIn4D). I. Overview, Magnetohydrodynamic Modeling, and Stokes Profile Synthesis",
+      "publisher": "The Astrophysical Journal",
+      "releaseDate": "2024-11-25",
+      "url": "https://iopscience.iop.org/article/10.3847/1538-4357/ad865b",
+      "summary": "The first paper of SPIn4D project."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "A Possible Mechanism for Late Phase in Stellar White-Light Flares",
+      "publisher": "The Astrophysical Journal",
+      "releaseDate": "2023-12-06",
+      "url": "https://iopscience.iop.org/article/10.3847/1538-4357/ad077d",
+      "summary": "A connection between solar flare induced corona rain and the astronomical observation from other stars, they provide a signal of coronal white-light emission, which is missing in the standard flare model."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Observationally Quantified Reconnection Providing a Viable Mechanism for Active Region Coronal Heating",
+      "publisher": "Nature Communication",
+      "releaseDate": "2018-02-16",
+      "url": "https://www.nature.com/articles/s41467-018-03056-8",
+      "summary": "A coronal heating model that combine the observation directly with magnetic field reconnection."
     }
   ],
   "skills": [
@@ -104,18 +169,18 @@
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "NLFFF based magnetic friction, optimization, Grad-Rubin",
+        "Hydrodynamic 1D Loop",
+        "MHD simulation based on MPI-AMRVAC",
+        "Spectropolarimetry inversion based M-E, SIR, and DeSIRe.",
+        "Topological analysis, QSL, Twist, Helicity",
+        "Machine learning on solar data"
       ]
     }
   ],
   "languages": [
     {
-      "language": "Chinese",
+      "language": "Mandarin",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -127,36 +192,16 @@
   ],
   "interests": [
     {
-      "name": "Solarphysics",
+      "name": "Astrophysics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Solar-stellar connection",
-        "3D magnetic field in solar corona",
+        "Coronal Heating",
         "Spectropolarimetric inversion",
-        "Machine learning technique in astronomy"
+        "Non-linear force-free field",
+        "3D magnetic field topology",
+        "Flare dynamic",
+        "Machine learning technique for solar data"
       ]
     }
-  ],
-  // "references": [
-  //   {
-  //     "name": "Professor John Doe",
-  //     "icon": "fa-solid fa-laptop",
-  //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-  //   },
-  //   {
-  //     "name": "Professor John Doe",
-  //     "icon": "fa-solid fa-thumbtack",
-  //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-  //   }
-  // ],
-  // "projects": [
-  //   {
-  //     "name": "Quantum Computing",
-  //     "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-  //     "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-  //     "startDate": "2018-01-01",
-  //     "endDate": "2018-01-01",
-  //     "url": "https://example.com"
-  //   }
-  // ]
+  ]
 }
