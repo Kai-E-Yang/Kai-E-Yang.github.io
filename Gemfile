@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+gem 'jekyll', '~> 4.3.4'  # Specify the desired version
+gem 'classifier-reborn'
+gem 'jekyll-archives'
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
