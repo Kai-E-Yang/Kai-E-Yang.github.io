@@ -16,6 +16,7 @@ gem 'jekyll-tabs', '~> 1.2.1'
 gem 'jekyll-toc', '~> 0.19.0'
 gem 'jekyll-twitter-plugin', '~> 2.1.0'
 gem 'jekyll-feed'
+gem 'jekyll-sitemap'
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
