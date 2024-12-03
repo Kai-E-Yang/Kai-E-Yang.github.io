@@ -39,6 +39,17 @@ jobs:
           ruby-version: '3.2' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Install Jupyter
+        run: |
+          pip install --user jupyter
+          echo "$HOME/.local/bin" >> $GITHUB_PATH  # Add pip user bin to PATH
+
+      - name: Build Jekyll Site
+        env:
+          JEKYLL_ENV: production
+          PAGES_REPO_NWO: Kai-E-Yang/Kai-E-Yang.github.io
+        run: bundle exec jekyll build --trace
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
