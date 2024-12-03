@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://github.com/Kai-E-Yang/Kai-E-Yang.github.io/sitemap.xml
+Sitemap: https://Kai-E-Yang/Kai-E-Yang.github.io/sitemap.xml

@@ -18,12 +18,8 @@ gem 'jekyll-twitter-plugin', '~> 2.1.0'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jemoji'
-
-gem 'jekyll-sass-converter', '~> 2.1'
+gem 'jekyll-sass-converter', '~> 3.0'
 gem 'sassc', '~> 2.4'
-
-group :other_plugins do
-    gem 'css_parser'
-    gem 'feedjira'
-    gem 'httparty'
-end
+gem 'css_parser'
+gem 'feedjira'
+gem 'httparty'
