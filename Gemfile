@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll', '~> 4.3.4'
+gem 'activesupport', '~> 7.0'
 gem 'classifier-reborn', '~> 2.3.0'
 gem 'jekyll-archives', '~> 2.2.1'
 gem 'jekyll-email-protect', '~> 1.1.0'
