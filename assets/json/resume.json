@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Kai (E.) Yang",
-    "label": "Scientist",
+    "label": "Postdoctoral Researcher",
     "image": "",
     "email": "yangkai@hawaii.edu",
     // "phone": "(912) 123-4567",
-    "url": "https://github.com/Kai-E-Yang/",
+    "ORCiD": "https://orcid.org/0000-0003-4089-9316",
     "summary": "A Chinese-northeast-born solar-physicist ... ",
     "location": {
       "address": "34 Ohia Ku St.",
@@ -84,7 +84,7 @@
       "startDate": "2009-09-01",
       "endDate": "2013-06-30",
       "score": "10",
-      "courses": ["Magnetic Field Topology Associated with Solar Eruptive Events and Coronal Heating"]
+      "courses": ["On the 2012 October 23 Circular Ribbon Flare: Emission Features and Magnetic Topology"]
     }
   ],
   "awards": [
