@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-12-03T18:28:01-10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kai E. Yang</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-12-05T13:42:50-10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kai E. Yang</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">2024 New Year Eve at Maui</title><link href="http://localhost:4000/sample-posts/2024/01/01/images.html" rel="alternate" type="text/html" title="2024 New Year Eve at Maui" /><published>2024-01-01T11:01:00-10:00</published><updated>2024-01-01T11:01:00-10:00</updated><id>http://localhost:4000/sample-posts/2024/01/01/images</id><content type="html" xml:base="http://localhost:4000/sample-posts/2024/01/01/images.html"><![CDATA[<h5 id="photographs-of-the-orion-nebula-and-andromeda-galaxy-taken-from-the-southern-part-of-maui-island-i-should-have-brought-my-star-tracker-but-didnt-to-address-star-trails-caused-by-long-exposure-i-applied-deconvolution-while-it-helped-somewhat-the-results-were-less-than-ideal">Photographs of the Orion Nebula and Andromeda Galaxy taken from the southern part of Maui Island. I should have brought my star tracker but didn’t. To address star trails caused by long exposure, I applied deconvolution. While it helped somewhat, the results were less than ideal.</h5>
 
 <h3 id="the-orion-nebula">The Orion Nebula</h3>
@@ -235,7 +235,425 @@
   
 </figure>
 
-</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="images" /><summary type="html"><![CDATA[this is what included images could look like]]></summary></entry><entry><title type="html">Some personal notes on thermal emission with thin target model</title><link href="http://localhost:4000/personal/math/note/2021/07/20/math.html" rel="alternate" type="text/html" title="Some personal notes on thermal emission with thin target model" /><published>2021-07-20T05:12:00-10:00</published><updated>2021-07-20T05:12:00-10:00</updated><id>http://localhost:4000/personal/math/note/2021/07/20/math</id><content type="html" xml:base="http://localhost:4000/personal/math/note/2021/07/20/math.html"><![CDATA[<p>Here are notes for the thin target model of the X-ray emission in solar coronal, induced by high energetic particle.</p>
+</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="images" /><summary type="html"><![CDATA[this is what included images could look like]]></summary></entry><entry><title type="html">Some personal notes PT decomposition</title><link href="http://localhost:4000/personal/math/note/2022/05/01/math.html" rel="alternate" type="text/html" title="Some personal notes PT decomposition" /><published>2022-05-01T05:12:00-10:00</published><updated>2022-05-01T05:12:00-10:00</updated><id>http://localhost:4000/personal/math/note/2022/05/01/math</id><content type="html" xml:base="http://localhost:4000/personal/math/note/2022/05/01/math.html"><![CDATA[<p>Here are notes on PT decomposition.</p>
+
+<p>The PT decomposition is defined as follows,
+\(\mathbf{B}=\nabla\times(\nabla\eta\times\nabla\Phi)+\nabla\eta\times\nabla\Psi,\)</p>
+
+<p>\(\eta\) is a coordinate parameter in Cartesian or Spherical coordinates, it can be chosen as \(z\) and \(r\), respectively.
+The electric current is defined as follows, here we ignore the vacuum permeability.</p>
+
+\[\begin{aligned}
+\mathbf{J}=\nabla\times\mathbf{B}
+\end{aligned}\]
+
+<p>Thus we will have the following equations</p>
+
+\[\begin{aligned}
+\nabla^2_{||}\Phi=B_n,\\
+\nabla^2_{||}\Psi=J_n,\\
+\end{aligned}\]
+
+<p>where the subscript \(||\) indicates the operator only works in the directions parallel to the plane, which is perpendicular to \(\nabla\eta\).
+As the gradient operator along \(\eta\) commutates with the parallel Laplace operator, \([ \partial_{\eta}, \nabla^2_{||}]=0\).
+We will have,</p>
+
+\[\begin{align}
+\nabla^2_{||}\partial_{\eta}\Phi=\partial_{\eta}B_n,\\
+\nabla^2_{||}\partial_{\eta}\Psi=\partial_{\eta}J_n.\\
+\end{align}\]
+
+<p>Adopting the divergence-free and charge-free conditions, we can obtain,</p>
+
+\[\begin{align}
+\nabla^2_{||}\partial_{\eta}\Phi=-\nabla_{||}\cdot\mathbf{B}_{||},\\
+\nabla^2_{||}\partial_{\eta}\Psi=-\nabla_{||}\cdot\mathbf{J}_{||}.\\
+\end{align}\]
+
+<p>The parallel current components can be obtained using the force-free condition \(\mathbf{J}=\alpha\mathbf{B}\).</p>
+
+<p>Thus in each layer, we can obtain the variable \((\Phi,\Psi)^\top\) and their \(\eta\) derivative \((\partial_{\eta}\Phi,\partial_{\eta}\Psi)^\top\).
+Therefore, we can make an integral upward along \(\eta\), just like the integration of an ordinary equation.</p>
+
+<p>We can obtain the physical variable on a staggered grid, described in the following section.</p>
+
+<h4 id="cartesian-case">Cartesian Case</h4>
+<p>We choose \(\eta=z\), and the above equations become,</p>
+
+\[\begin{align}
+    \nabla^2_{x,y}\Phi&amp;=B_z,\\
+    \nabla^2_{x,y}\Psi&amp;=J_z,\\
+    \nabla^2_{x,y}\partial_z\Phi&amp;=-\partial_x B_x -\partial_y B_y,\\
+    \nabla^2_{x,y}\partial_z\Psi&amp;=-\partial_x J_x -\partial_y J_y.
+\end{align}\]
+
+<p>Therefore, the \(\mathbf{B}\) can be obtained directly from observations, and \(\mathbf{J}\) can be obtained by combining the force-free condition \(\mathbf{J}=\alpha\mathbf{B}\), where \(\alpha=J_z/B_z\).
+In the following discussion, we assume that \(\mathbf{B}\), \(J_z\), and \(\alpha\) have already been provided on the bottom boundary.</p>
+
+<p>Combining the Eq. 1, we can express the transverse components as,</p>
+
+\[\begin{align}
+    \mathbf{B}_{x,y}&amp;=\hat{e}_x(\partial_x\partial_z\Phi)+\hat{e}_y(\partial_y\partial_z\Phi)\\
+    &amp;+\hat{e}_x(\partial_y\Psi)+\hat{e}_y(-\partial_x\Psi).
+\end{align}\]
+
+<p>In the \(\hat{z}\) direction, the transverse components of \(\mathbf{B}\) only contain the first-order derivative.</p>
+
+<p>Here, we design a numerical scheme for the upward integral along the \(\hat{z}\) direction.
+Suppose that we already have \((\Phi,\Psi)^\top\) and \((\dot{\Phi},\dot{\Psi})^\top\) on the location of \(z_i\), where \((\dot{})\) over the variable indicates the derivative along \(\hat{z}\), hereafter we denote them as \((\Phi_i,\Psi_i)^\top\) and \((\dot{\Phi}_i,\dot{\Psi}_i)^\top\).
+With \((\dot{\Phi}_i,\dot{\Psi}_i)^\top\), we can deal it like the integral of an ODE.</p>
+
+<p>Lame parameters</p>]]></content><author><name></name></author><category term="personal" /><category term="math" /><category term="note" /><category term="formatting" /><category term="math" /><summary type="html"><![CDATA[personal notes on PT decomposition]]></summary></entry><entry><title type="html">Some life in Australia</title><link href="http://localhost:4000/sample-posts/2022/02/10/images.html" rel="alternate" type="text/html" title="Some life in Australia" /><published>2022-02-10T11:01:00-10:00</published><updated>2022-02-10T11:01:00-10:00</updated><id>http://localhost:4000/sample-posts/2022/02/10/images</id><content type="html" xml:base="http://localhost:4000/sample-posts/2022/02/10/images.html"><![CDATA[<h3 id="this-is-the-view-from-the-wedding-cake-rock-in-the-national-park-of-nsw">This is the view from the Wedding Cake Rock in the national park of NSW.</h3>
+
+<!-- <div class="container"> -->
+<div class="row mt-3">
+        <div class="col-6">
+            
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/2A5A3754.JPG" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/2A5A3754.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+            
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/ocean-480.webp 480w,/assets/img/sydney/ocean-800.webp 800w,/assets/img/sydney/ocean-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/ocean.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+        </div>
+        <div class="col-6">
+            
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/2A5A3703.JPG" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/2A5A3703.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+        </div>
+</div>
+
+<h3 id="in-anna-bay-a-desert-meets-the-ocean">In Anna Bay, a desert meets the ocean</h3>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/bf2b5830apd6e2704d1ed0c548e9dc0a.JPG" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/bf2b5830apd6e2704d1ed0c548e9dc0a.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/f6c28399fm071ccf2e82a46d6a720f63.JPG" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/f6c28399fm071ccf2e82a46d6a720f63.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+
+<h3 id="a-vacation-with-yaguang-at-green-island-in-cairns">A vacation with Yaguang at Green island in Cairns</h3>
+
+<div class="row mt-3">
+    <div class="col-4">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/GPTempDownload.JPG" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/GPTempDownload.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/GPTempDownload_3-480.webp 480w,/assets/img/sydney/GPTempDownload_3-800.webp 800w,/assets/img/sydney/GPTempDownload_3-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/GPTempDownload_3.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-4">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/GPTempDownload_2-480.webp 480w,/assets/img/sydney/GPTempDownload_2-800.webp 800w,/assets/img/sydney/GPTempDownload_2-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/GPTempDownload_2.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-4">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/IMG_7878-480.webp 480w,/assets/img/sydney/IMG_7878-800.webp 800w,/assets/img/sydney/IMG_7878-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/IMG_7878.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+
+<h3 id="outside-my-apartment">Outside my apartment.</h3>
+
+<div class="row mt-3">
+    <div class="col-sm mt-2 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/outside_window-480.webp 480w,/assets/img/sydney/outside_window-800.webp 800w,/assets/img/sydney/outside_window-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/outside_window.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/outside_window_3-480.webp 480w,/assets/img/sydney/outside_window_3-800.webp 800w,/assets/img/sydney/outside_window_3-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/outside_window_3.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/outside_window_2-480.webp 480w,/assets/img/sydney/outside_window_2-800.webp 800w,/assets/img/sydney/outside_window_2-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/outside_window_2.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+
+<h3 id="2024-christmas-and-new-year-eve">2024 Christmas and New Year Eve.</h3>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/2A5A4597.JPG" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/2A5A4597.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-1 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/IMG_6329-480.webp 480w,/assets/img/sydney/IMG_6329-800.webp 800w,/assets/img/sydney/IMG_6329-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/IMG_6329.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-1 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sydney/IMG_6307-480.webp 480w,/assets/img/sydney/IMG_6307-800.webp 800w,/assets/img/sydney/IMG_6307-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+    <img src="/assets/img/sydney/IMG_6307.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="images" /><summary type="html"><![CDATA[Some life in Australia from 2019-2022]]></summary></entry><entry><title type="html">Some personal notes on thermal emission with thin target model</title><link href="http://localhost:4000/personal/math/note/2021/07/20/math.html" rel="alternate" type="text/html" title="Some personal notes on thermal emission with thin target model" /><published>2021-07-20T05:12:00-10:00</published><updated>2021-07-20T05:12:00-10:00</updated><id>http://localhost:4000/personal/math/note/2021/07/20/math</id><content type="html" xml:base="http://localhost:4000/personal/math/note/2021/07/20/math.html"><![CDATA[<p>Here are notes for the thin target model of the X-ray emission in solar coronal, induced by high energetic particle.</p>
 
 <h2 id="thermal-energy">Thermal Energy:</h2>
 
@@ -674,357 +1092,7 @@ Thus it is just a simple black body radiation in the X ray energy range.</p>]]><
 </figure>
 
     </div>
-</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="images" /><summary type="html"><![CDATA[this is what included images could look like]]></summary></entry><entry><title type="html">Some life in Australia</title><link href="http://localhost:4000/sample-posts/2021/06/10/images.html" rel="alternate" type="text/html" title="Some life in Australia" /><published>2021-06-10T11:01:00-10:00</published><updated>2021-06-10T11:01:00-10:00</updated><id>http://localhost:4000/sample-posts/2021/06/10/images</id><content type="html" xml:base="http://localhost:4000/sample-posts/2021/06/10/images.html"><![CDATA[<h3 id="this-is-the-view-from-the-wedding-cake-rock-in-the-national-park-of-nsw">This is the view from the Wedding Cake Rock in the national park of NSW.</h3>
-
-<!-- <div class="container"> -->
-<div class="row mt-3">
-        <div class="col-6">
-            
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/2A5A3754.JPG" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/2A5A3754.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-            
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/ocean-480.webp 480w,/assets/img/sydney/ocean-800.webp 800w,/assets/img/sydney/ocean-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/ocean.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-        </div>
-        <div class="col-6">
-            
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/2A5A3703.JPG" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/2A5A3703.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-        </div>
-</div>
-
-<h3 id="in-anna-bay-a-desert-meets-the-ocean">In Anna Bay, a desert meets the ocean</h3>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/bf2b5830apd6e2704d1ed0c548e9dc0a.JPG" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/bf2b5830apd6e2704d1ed0c548e9dc0a.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/f6c28399fm071ccf2e82a46d6a720f63.JPG" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/f6c28399fm071ccf2e82a46d6a720f63.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-
-<h3 id="a-vacation-with-yaguang-at-green-island-in-cairns">A vacation with Yaguang at Green island in Cairns</h3>
-
-<div class="row mt-3">
-    <div class="col-4">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/GPTempDownload.JPG" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/GPTempDownload.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/GPTempDownload_3-480.webp 480w,/assets/img/sydney/GPTempDownload_3-800.webp 800w,/assets/img/sydney/GPTempDownload_3-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/GPTempDownload_3.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-4">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/GPTempDownload_2-480.webp 480w,/assets/img/sydney/GPTempDownload_2-800.webp 800w,/assets/img/sydney/GPTempDownload_2-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/GPTempDownload_2.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-4">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/IMG_7878-480.webp 480w,/assets/img/sydney/IMG_7878-800.webp 800w,/assets/img/sydney/IMG_7878-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/IMG_7878.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-
-<h3 id="outside-my-apartment">Outside my apartment.</h3>
-
-<div class="row mt-3">
-    <div class="col-sm mt-2 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/outside_window-480.webp 480w,/assets/img/sydney/outside_window-800.webp 800w,/assets/img/sydney/outside_window-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/outside_window.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-sm mt-2 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/outside_window_3-480.webp 480w,/assets/img/sydney/outside_window_3-800.webp 800w,/assets/img/sydney/outside_window_3-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/outside_window_3.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/outside_window_2-480.webp 480w,/assets/img/sydney/outside_window_2-800.webp 800w,/assets/img/sydney/outside_window_2-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/outside_window_2.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-
-<h3 id="2024-christmas-and-new-year-eve">2024 Christmas and New Year Eve.</h3>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/2A5A4597.JPG" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/2A5A4597.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-sm mt-1 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/IMG_6329-480.webp 480w,/assets/img/sydney/IMG_6329-800.webp 800w,/assets/img/sydney/IMG_6329-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/IMG_6329.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-sm mt-1 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sydney/IMG_6307-480.webp 480w,/assets/img/sydney/IMG_6307-800.webp 800w,/assets/img/sydney/IMG_6307-1400.webp 1400w," type="image/webp" sizes="95vw" />
-    
-    <img src="/assets/img/sydney/IMG_6307.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="images" /><summary type="html"><![CDATA[Some life in Australia from 2019-2022]]></summary></entry><entry><title type="html">Some personal notes from particle to fluid</title><link href="http://localhost:4000/personal/math/note/2021/05/01/math.html" rel="alternate" type="text/html" title="Some personal notes from particle to fluid" /><published>2021-05-01T05:12:00-10:00</published><updated>2021-05-01T05:12:00-10:00</updated><id>http://localhost:4000/personal/math/note/2021/05/01/math</id><content type="html" xml:base="http://localhost:4000/personal/math/note/2021/05/01/math.html"><![CDATA[<p>Here are notes the momentum equation of the fluid from particle scale</p>
+</div>]]></content><author><name></name></author><category term="sample-posts" /><category term="images" /><summary type="html"><![CDATA[this is what included images could look like]]></summary></entry><entry><title type="html">Some personal notes from particle to fluid</title><link href="http://localhost:4000/personal/math/note/2021/05/01/math.html" rel="alternate" type="text/html" title="Some personal notes from particle to fluid" /><published>2021-05-01T05:12:00-10:00</published><updated>2021-05-01T05:12:00-10:00</updated><id>http://localhost:4000/personal/math/note/2021/05/01/math</id><content type="html" xml:base="http://localhost:4000/personal/math/note/2021/05/01/math.html"><![CDATA[<p>Here are notes the momentum equation of the fluid from particle scale</p>
 
 <h3 id="basic-kinetic-theory">Basic Kinetic Theory</h3>
 

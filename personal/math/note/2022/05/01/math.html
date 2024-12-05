@@ -17,13 +17,12 @@
   
   
     
-      Our Late Phase Stellar Flare is Online Now | Kai E. Yang
+      Some personal notes PT decomposition | Kai E. Yang
     
   
 </title>
 <meta name="author" content="Kai (E.) Yang">
-<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+<meta name="description" content="personal notes on PT decomposition">
 
   <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -61,7 +60,7 @@
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="http://localhost:4000/news/announcement_1/">
+<link rel="canonical" href="http://localhost:4000/personal/math/note/2022/05/01/math.html">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
@@ -303,19 +302,56 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">Our Late Phase Stellar Flare is Online Now</h1>
+    <h1 class="post-title">Some personal notes PT decomposition</h1>
     <p class="post-meta">
-      Created in January 12, 2024
+      Created in May 01, 2022
       
       
       
     </p>
     <p class="post-tags">
       
-        <i class="fa-solid fa-calendar fa-sm"></i> 2024
+        <i class="fa-solid fa-calendar fa-sm"></i> 2022
       
+      
+          ·  
+        
+          
+            <i class="fa-solid fa-hashtag fa-sm"></i> formatting
+          
+          
+             
+          
+        
+          
+            <i class="fa-solid fa-hashtag fa-sm"></i> math
+          
+          
+        
       
 
+      
+          ·  
+        
+          
+            <i class="fa-solid fa-tag fa-sm"></i> personal
+          
+          
+             
+          
+        
+          
+            <i class="fa-solid fa-tag fa-sm"></i> math
+          
+          
+             
+          
+        
+          
+            <i class="fa-solid fa-tag fa-sm"></i> note
+          
+          
+        
       
     </p>
   </header>
@@ -323,31 +359,75 @@
   <article class="post-content">
     
     <div id="markdown-content">
-      <p>Here is the <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad077d" rel="external nofollow noopener" target="_blank">paper</a></p>
+      <p>Here are notes on PT decomposition.</p>
 
-<p>Here are some press on our stellar flares work.</p>
+<p>The PT decomposition is defined as follows,
+\(\mathbf{B}=\nabla\times(\nabla\eta\times\nabla\Phi)+\nabla\eta\times\nabla\Psi,\)</p>
 
-<p><a href="https://www.hawaii.edu/news/2023/12/06/physics-super-flares/" rel="external nofollow noopener" target="_blank">UH News</a></p>
+<p>\(\eta\) is a coordinate parameter in Cartesian or Spherical coordinates, it can be chosen as \(z\) and \(r\), respectively.
+The electric current is defined as follows, here we ignore the vacuum permeability.</p>
 
-<p><a href="https://phys.org/news/2023-12-physics-unusual-behavior-stars-super.html" rel="external nofollow noopener" target="_blank">Phys org</a></p>
+\[\begin{aligned}
+\mathbf{J}=\nabla\times\mathbf{B}
+\end{aligned}\]
 
-<p><a href="https://scitechdaily.com/brighter-than-a-thousand-suns-scientists-unravel-physics-behind-unusual-behavior-of-stars-super-flares/" rel="external nofollow noopener" target="_blank">Sci Tech Daily</a></p>
+<p>Thus we will have the following equations</p>
 
-<p><a href="https://interestingengineering.com/science/superflares-10000-times-brighter-than-sun">Interesting Engineering</a></p>
+\[\begin{aligned}
+\nabla^2_{||}\Phi=B_n,\\
+\nabla^2_{||}\Psi=J_n,\\
+\end{aligned}\]
 
-<p><a href="https://perexpteamworks.com/en/super-flares-in-stars-news/" rel="external nofollow noopener" target="_blank">PerEXP</a></p>
+<p>where the subscript \(||\) indicates the operator only works in the directions parallel to the plane, which is perpendicular to \(\nabla\eta\).
+As the gradient operator along \(\eta\) commutates with the parallel Laplace operator, \([ \partial_{\eta}, \nabla^2_{||}]=0\).
+We will have,</p>
 
-<p><a href="https://kauainownews.com/2023/12/10/physics-behind-unusual-behavior-of-stars-super-flares-discovered/" rel="external nofollow noopener" target="_blank">kauainownews</a></p>
+\[\begin{align}
+\nabla^2_{||}\partial_{\eta}\Phi=\partial_{\eta}B_n,\\
+\nabla^2_{||}\partial_{\eta}\Psi=\partial_{\eta}J_n.\\
+\end{align}\]
 
-<p><a href="https://www.space.com/superflares-stars-thousands-times-brighter-than-sun-solar-flares" rel="external nofollow noopener" target="_blank">SPACE</a></p>
+<p>Adopting the divergence-free and charge-free conditions, we can obtain,</p>
 
-<p><a href="https://www.universetoday.com/164772/how-do-superflares-get-so-powerful/" rel="external nofollow noopener" target="_blank">Universe Today</a></p>
+\[\begin{align}
+\nabla^2_{||}\partial_{\eta}\Phi=-\nabla_{||}\cdot\mathbf{B}_{||},\\
+\nabla^2_{||}\partial_{\eta}\Psi=-\nabla_{||}\cdot\mathbf{J}_{||}.\\
+\end{align}\]
 
-<p><a href="https://www.techexplorist.com/scientists-uncovered-physics-stars-superflares/78315/" rel="external nofollow noopener" target="_blank">Tech Explorist</a></p>
+<p>The parallel current components can be obtained using the force-free condition \(\mathbf{J}=\alpha\mathbf{B}\).</p>
 
-<p><a href="https://bnnbreaking.com/tech/science-tech/decoding-the-mysteries-of-stellar-super-flares-a-groundbreaking-study/" rel="external nofollow noopener" target="_blank">BNN Breaking</a></p>
+<p>Thus in each layer, we can obtain the variable \((\Phi,\Psi)^\top\) and their \(\eta\) derivative \((\partial_{\eta}\Phi,\partial_{\eta}\Psi)^\top\).
+Therefore, we can make an integral upward along \(\eta\), just like the integration of an ordinary equation.</p>
 
-<hr>
+<p>We can obtain the physical variable on a staggered grid, described in the following section.</p>
+
+<h4 id="cartesian-case">Cartesian Case</h4>
+<p>We choose \(\eta=z\), and the above equations become,</p>
+
+\[\begin{align}
+    \nabla^2_{x,y}\Phi&amp;=B_z,\\
+    \nabla^2_{x,y}\Psi&amp;=J_z,\\
+    \nabla^2_{x,y}\partial_z\Phi&amp;=-\partial_x B_x -\partial_y B_y,\\
+    \nabla^2_{x,y}\partial_z\Psi&amp;=-\partial_x J_x -\partial_y J_y.
+\end{align}\]
+
+<p>Therefore, the \(\mathbf{B}\) can be obtained directly from observations, and \(\mathbf{J}\) can be obtained by combining the force-free condition \(\mathbf{J}=\alpha\mathbf{B}\), where \(\alpha=J_z/B_z\).
+In the following discussion, we assume that \(\mathbf{B}\), \(J_z\), and \(\alpha\) have already been provided on the bottom boundary.</p>
+
+<p>Combining the Eq. 1, we can express the transverse components as,</p>
+
+\[\begin{align}
+    \mathbf{B}_{x,y}&amp;=\hat{e}_x(\partial_x\partial_z\Phi)+\hat{e}_y(\partial_y\partial_z\Phi)\\
+    &amp;+\hat{e}_x(\partial_y\Psi)+\hat{e}_y(-\partial_x\Psi).
+\end{align}\]
+
+<p>In the \(\hat{z}\) direction, the transverse components of \(\mathbf{B}\) only contain the first-order derivative.</p>
+
+<p>Here, we design a numerical scheme for the upward integral along the \(\hat{z}\) direction.
+Suppose that we already have \((\Phi,\Psi)^\top\) and \((\dot{\Phi},\dot{\Psi})^\top\) on the location of \(z_i\), where \((\dot{})\) over the variable indicates the derivative along \(\hat{z}\), hereafter we denote them as \((\Phi_i,\Psi_i)^\top\) and \((\dot{\Phi}_i,\dot{\Psi}_i)^\top\).
+With \((\dot{\Phi}_i,\dot{\Psi}_i)^\top\), we can deal it like the integral of an ODE.</p>
+
+<p>Lame parameters</p>
 
     </div>
   </article>
